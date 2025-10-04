@@ -1,6 +1,37 @@
-<!-- 聊天记录展示区 -->
-<div id="chat-history" class="chat-container"></div>
-<!-- 用户输入框 -->
-<input type="text" id="user-input" placeholder="输入你的问题...">
-<!-- 发送按钮 -->
-<button id="send-btn">发送</button>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 适配移动端（避免手机上显示过小） -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>火山AI对话</title>
+    <!-- 引入样式文件（确保和index.html在同一文件夹） -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 聊天界面容器（控制整体宽度和居中） -->
+    <div class="chat-wrapper">
+        <!-- 标题 -->
+        <h1 class="chat-title">AI 对话助手</h1>
+
+        <!-- 聊天记录区（ID必须是chat-history，和script.js对应） -->
+        <div id="chat-history" class="chat-history"></div>
+
+        <!-- 输入区域（输入框+发送按钮） -->
+        <div class="input-area">
+            <!-- 输入框（ID必须是user-input，和script.js对应） -->
+            <input 
+                type="text" 
+                id="user-input" 
+                placeholder="输入你的问题...（按回车也能发送）"
+                autocomplete="off"  <!-- 关闭自动填充，避免干扰 -->
+            >
+            <!-- 发送按钮（ID必须是send-btn，和script.js对应） -->
+            <button id="send-btn">发送</button>
+        </div>
+    </div>
+
+    <!-- 引入脚本文件（必须放在body末尾！确保DOM加载完再执行脚本） -->
+    <script src="script.js"></script>
+</body>
+</html>
