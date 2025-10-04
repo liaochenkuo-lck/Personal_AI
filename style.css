@@ -1,0 +1,60 @@
+/* 聊天容器 */
+.chat-container {
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* 消息通用样式 */
+.message {
+  margin: 12px 0;
+  padding: 12px 16px;
+  border-radius: 8px;
+  max-width: 75%;
+  line-height: 1.5;
+}
+
+/* 用户消息（靠右，蓝色背景） */
+.user-message {
+  background-color: #4285f4;
+  color: white;
+  margin-left: auto;
+}
+
+/* AI消息（靠左，灰色背景） */
+.ai-message {
+  background-color: #f5f5f5;
+  color: #333;
+  margin-right: auto;
+}
+
+/* 消息角色标签（如“你”“AI”） */
+.user-label, .ai-label {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* 输入框和按钮样式 */
+#user-input {
+  width: 75%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+#send-btn {
+  width: 20%;
+  padding: 12px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 5%;
+}
+
+#send-btn:hover {
+  background-color: #3367d6;
+}
