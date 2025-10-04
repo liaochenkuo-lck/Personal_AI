@@ -1,6 +1,6 @@
 // 1. 后端代理接口地址（核心！已填入你的Vercel后端域名 + 接口路径）
 // 格式：后端域名 + /api/chat（/api/chat是后端index.js中定义的接口路径）
-const BACKEND_PROXY_URL = "personal-ai-rosy.vercel.app";
+const BACKEND_PROXY_URL = "https://personal-ai-rosy.vercel.app/api/chat";
 
 // 2. 获取前端DOM元素（对应index.html中的聊天区域、输入框、发送按钮）
 const chatHistory = document.getElementById('chat-history'); // 聊天记录展示区
