@@ -14,7 +14,7 @@ const VOLC_API_URL = "https://ark.cn-beijing.volces.com/api/v3/chat/completions"
 const VOLC_BEARER_TOKEN = process.env.VOLC_BEARER_TOKEN;
 
 // 代理接口：/api/chat
-app.post('/api/chat', async (req, res) => {
+app.post('https://personal-ai-rosy.vercel.app/api/chat', async (req, res) => {
   try {
     const userMessage = req.body.message;
     if (!userMessage) return res.json({ error: "请输入消息" });
