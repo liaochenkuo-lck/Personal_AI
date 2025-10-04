@@ -11,7 +11,7 @@ app.use(express.json());
 
 // 火山引擎API配置（从Vercel环境变量读取Token）
 const VOLC_API_URL = "https://ark.cn-beijing.volces.com/api/v3/chat/completions";
-const VOLC_BEARER_TOKEN = process.env.d459c015-47aa-4583-9ff9-36822e3f2f4b;
+const VOLC_BEARER_TOKEN = process.env.VOLC_BEARER_TOKEN;
 
 // 代理接口：/api/chat
 app.post('/api/chat', async (req, res) => {
